@@ -1,15 +1,20 @@
-# Prompt
+# Rezolvare lab01
+
+## Prompt
 
 tu esti un profesor de c++ cu abilitati de explicare. 
-eu am urmatoarea sarcina
----
-# Crearea unui proiect. Lucrul cu GIT
 
-## Scop
+eu am urmatoarea sarcina
+
+---
+
+### Crearea unui proiect. Lucrul cu GIT
+
+#### Scop
 
 După executarea acestei lucrării de laborator student va face cunoștința cu sistem de control codului sursă GIT și va primi cunoștințe de bază necesare pentru organizarea proiectului.
 
-## Sarcina
+#### Sarcina
 
 1. Selectați pentru realizarea o joacă din specificate:
    1. joc de cărți "Durak"
@@ -37,11 +42,11 @@ După executarea acestei lucrării de laborator student va face cunoștința cu 
 
 > În caz, dacă se utilizează LLM (Large Language Model) pentru obținerea rezultatului, proiectul trebuie să includă și mențiunea corespunzătoare în README.md, și fișierul `prompts.md`, care conține prompturile utilizate și răspunsurile generate.
 
-## Prezentare
+#### Prezentare
 
 La lucrare de laborator în Moodle adaugați referința repozitoriu.
 
-## Evaluare
+#### Evaluare
 
 - `1p` - crearea contului pe GitHub
 - `1p` - crearea proiectului
@@ -54,13 +59,13 @@ La lucrare de laborator în Moodle adaugați referința repozitoriu.
 ---
 eu am ales tic tac toe, explicami ce trebuie sa fac
 
-# Raspuns
+## Raspuns
 
 Tic-tac-toe e o alegere foarte bună: regulile sunt simple, deci te poți concentra pe ce se evaluează cu adevărat, adică **Git** și **organizarea proiectului**. Hai să luăm pașii pe rând, ca să știi și *ce* faci, și *de ce* faci. La apărare (3p) te vor întreba tocmai „de ce”.
 
 ---
 
-## Ideea de bază: cele 3 fișiere obligatorii
+### Ideea de bază: cele 3 fișiere obligatorii
 
 Profesorul îți cere să împarți jocul în trei părți. Este un principiu clasic de proiectare, numit **separarea responsabilităților** (seamănă cu modelul MVC):
 
@@ -74,13 +79,13 @@ Profesorul îți cere să împarți jocul în trei părți. Este un principiu cl
 
 ---
 
-## Pasul 1–3: Contul GitHub și repozitoriul
+### Pasul 1–3: Contul GitHub și repozitoriul
 
 1. Te înregistrezi pe [github.com](https://github.com/).
 2. Apeși **New repository**, îi dai un nume (de exemplu `tic-tac-toe`), îl faci **Public** și bifezi „Add a README file”.
 3. Apeși **Create repository**.
 
-## Pasul 4: Clonarea pe calculator
+### Pasul 4: Clonarea pe calculator
 
 Instalezi Git (de pe [git-scm.com](https://git-scm.com/)), apoi în terminal scrii:
 
@@ -97,7 +102,7 @@ Ultima comandă e importantă: **creează ramura `lab01`** și te mută pe ea. E
 
 ---
 
-## Pasul 5: README.md
+### Pasul 5: README.md
 
 Trebuie să conțină cele 3 secțiuni cerute. Un exemplu de structură:
 
@@ -126,7 +131,7 @@ Prompturile și răspunsurile sunt în fișierul `prompts.md`.
 
 ---
 
-## Pasul 6: Fișierele .hpp
+### Pasul 6: Fișierele .hpp
 
 În această etapă scrii doar **definițiile** (ce există), nu și implementarea (cum funcționează). Implementarea vine în laboratoarele următoare. Îți propun 4 fișiere: cele 3 obligatorii plus unul cu tipurile comune.
 
@@ -206,7 +211,7 @@ Câteva lucruri pe care să le poți explica la apărare:
 
 ---
 
-## Pasul 7: Publicarea pe GitHub
+### Pasul 7: Publicarea pe GitHub
 
 ```bash
 git add .
@@ -220,7 +225,7 @@ Pe GitHub verifici că ramura `lab01` apare și conține toate fișierele. Apoi 
 
 ---
 
-## Structura finală a proiectului
+### Structura finală a proiectului
 
 ```
 tic-tac-toe/
