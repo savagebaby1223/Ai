@@ -1,8 +1,47 @@
+# Prompt
+
+mai am inca o sarcina
+
+```markdown
+# Crearea și utilizarea claselor. Proiecte complexe. Construirea proiectului
+
+## Scop
+
+După finalizarea acestei sarcini, studentul se va familiariza cu caracteristicile implementării clasei și interacțiunii cu obiectele clasei. Studentul va primi, de asemenea, cunoștințe de bază despre construcție din linia de comandă a proiectelor.
+
+## Sarcina
+
+Sarcina se bazează pe lucrările anterioare de laborator. Efectuarea sarcinii se face în ramura `lab02` a repozitoriului creat anterior.
+
+1. Pentru fiecare structură declarată implementați metode
+2. Compilați unul dintre fișierele CPP din linia de comandă, creând un fișier obiect
+3. Creați un fișier `cmd` (sau `Makefile`) pentru a construi manual proiectul
+4. Creați un fișier `.gitignore` pentru a ignora fișierele obiect și fișierele executabile
+5. Modificati fișierul README.md pentru a reflecta metoda de construcție a proiectului
+6. Adăugați în repozitoriu GitHub codul sursă modificat și fișierul de construcție în ramura `lab02`
+
+## Prezentare
+
+La lucrare de laborator în Moodle adaugați referința repozitoriu.
+
+## Evaluare
+
+- `2p` - implementarea metodelor pentru structuri
+- `4p` - crearea fișierului de construcție
+- `1p` - crearea fișierului `.gitignore`
+- `1p` - adaugarea in fisier `README.md` modului de construire a proiectului
+- `2p` - adăugarea fișierelor `cpp` și fișierului de construcție pe GitHub în ramura `lab02`
+- `-1p` - pentru fiecare zi de întârziere
+- `-5p` - pentru copierea codului de la colegi
+```
+
+## Raspuns
+
 Această sarcină continuă direct laboratorul 1. În lab01 ai scris *ce* există (declarațiile din `.hpp`). Acum scrii *cum* funcționează (implementările din `.cpp`) și înveți cum se transformă codul într-un program executabil.
 
 ---
 
-## Pasul 0: Ramura `lab02`
+### Pasul 0: Ramura `lab02`
 
 Lucrul se face pe o ramură nouă, creată **din `lab01`**, ca să păstrezi tot ce ai făcut deja:
 
@@ -13,7 +52,7 @@ git checkout -b lab02
 
 ---
 
-## Pasul 1: Implementarea metodelor (2p)
+### Pasul 1: Implementarea metodelor (2p)
 
 Regula de bază este simplă: **fiecare `.hpp` primește un `.cpp` cu același nume.** În `.cpp` scrii corpul metodelor folosind sintaxa `NumeClasa::numeMetoda`. Operatorul `::` îi spune compilatorului că metoda aparține acelei clase.
 
@@ -191,7 +230,7 @@ int main() {
 
 ---
 
-## Pasul 2: Compilarea unui fișier în fișier obiect
+### Pasul 2: Compilarea unui fișier în fișier obiect
 
 Construirea unui program C++ are **două etape**, iar profesorul vrea să le vezi separat:
 
@@ -212,7 +251,7 @@ Ce înseamnă opțiunile: `-std=c++17` alege standardul limbajului, `-Wall` acti
 
 ---
 
-## Pasul 3: Fișierul de construcție (4p, cea mai valoroasă parte)
+### Pasul 3: Fișierul de construcție (4p, cea mai valoroasă parte)
 
 Fără un fișier de construcție ar trebui să scrii de fiecare dată 5 comenzi lungi. Le scrii o singură dată într-un fișier. Îți recomand **Makefile**, iar mai jos ai și varianta `cmd`.
 
@@ -284,7 +323,7 @@ exit /b 1
 
 ---
 
-## Pasul 4: `.gitignore` (1p)
+### Pasul 4: `.gitignore` (1p)
 
 Fișierele `.o` și `.exe` se **generează** din codul sursă, deci nu au ce căuta în repozitoriu: ocupă loc, diferă de la calculator la calculator și pot fi refăcute oricând cu `make`. Creează fișierul `.gitignore` (cu punct la început):
 
@@ -306,7 +345,7 @@ Verifici că funcționează: după `make`, comanda `git status` **nu** trebuie s
 
 ---
 
-## Pasul 5: Actualizarea README.md (1p)
+### Pasul 5: Actualizarea README.md (1p)
 
 Adaugă o secțiune nouă:
 
@@ -342,7 +381,7 @@ Nu uita să **adaugi și această conversație în `prompts.md`**, ca la laborat
 
 ---
 
-## Pasul 6: Publicarea (2p)
+### Pasul 6: Publicarea (2p)
 
 Fă commit-uri separate, pe etape. Istoricul arată astfel că ai lucrat progresiv:
 
@@ -363,7 +402,7 @@ Pe GitHub verifici că ramura `lab02` conține toate fișierele și **niciun** `
 
 ---
 
-## Structura finală
+### Structura finală
 
 ```
 tic-tac-toe/
